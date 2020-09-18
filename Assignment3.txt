@@ -21,7 +21,9 @@ Created By: Roderick Chubb, James Woods
 		        System.out.println("Hello, World"); 
 		    } 
 		} 
-	3.2)
+	3.2)JDK Needed: The JDK would be needed when developing this program. JRE and JVM would not be needed as they focus on the execution, rather than the creation.
+	3.3)JRE Needed: The JRE is needed when executing the program.  This contains class libraries and supporting file necessary to execute the program.
+	3.4)JVM Needed: The JVM is needed to provide platform independent execution. It includes JIT or Just-in-Time compiler that converts Java into very low level machine languages that allows for different platforms, and also a quicker execution.
 4) Non-trivial question:
 	4.1) If these 3 commonly work together, why are they not integrated into one standalone package?
 	4.2)
