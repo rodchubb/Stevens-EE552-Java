@@ -9,7 +9,7 @@ Created By: Roderick Chubb, James Woods
 2) What is the relation between the three (JDK, JRE, JVM)? How is Java code executed in a Java program. Explain by assuming that the program was written on one platform (e.g., Windows) and executed on another (e.g., Linux).
 	2.1)
 3) With the help of the code for Hello World program in Java (you can copy code with citation), explain when this program needs JDK (and not JRE and JVM), JRE (and not JVM) and JVM.
-	3.1) Hello World example:
+	3.1) Hello World example: (Source: https://www.geeksforgeeks.org/beginning-java-programming-with-hello-world-example/)
 		/* This is a simple Java program. 
    		   FileName : "HelloWorld.java". */
 		class HelloWorld 
@@ -22,3 +22,6 @@ Created By: Roderick Chubb, James Woods
 		    } 
 		} 
 	3.2)
+4) Non-trivial question:
+	4.1) If these 3 commonly work together, why are they not integrated into one standalone package?
+	4.2)
