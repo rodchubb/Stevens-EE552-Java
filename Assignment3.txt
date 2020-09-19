@@ -52,3 +52,7 @@ The relationship between the various components make it possible for Java to mak
 4) Non-trivial question:
 
    	4.1) If these 3 commonly work together, why are they not integrated into one standalone package?
+
+	4.2) Conceptually how is the approach of including the JVM inside of the JRE and then making the JRE necessary for end users to run Java programs different from how scripted/interpreted languages like Python and Ruby work?
+
+	4.3) In practice are there any security advantages that are conferred by running programs within the JVM. Is the JVM sandboxed from RING 0 on most Operating Systems? Is there a layer of abstraction between the host and the JVM?
