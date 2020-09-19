@@ -2,14 +2,33 @@ EE-552-WS : Assignment 3
 Date: 9/20/2020
 Created By: Roderick Chubb, James Woods
 
+
+
 1) What are JDK, JRE and JVM?
-	1.1) JDK is the Java Development Kit that holds the necessary components for you to create Java programs.
+
+   	1.1) JDK is the Java Development Kit that holds the necessary components for you to create Java programs.
+
 	1.2) JRE is the Java Runtime Environment that is the component on your machine that creates the JVM.
+
 	1.3) JVM is the Java Virtual Machine that allows programs to run on any device ("Write once, run anywhere").
+
+
+
 2) What is the relation between the three (JDK, JRE, JVM)? How is Java code executed in a Java program. Explain by assuming that the program was written on one platform (e.g., Windows) and executed on another (e.g., Linux).
-	2.1)
+
+   	2.1) The JDK is the development environment used to create Java programs. It contains the compiler "javac" as well as many other developer-focused tools. By way of javac the JDK converts source code to bytecode. The JDK also contains the JRE. 
+
+The JRE, in turn, is responsible for running Java programs. It contains the libraries, loader classes, and the JVM. An end-user just need the JRE in order to run Java programs but keep in mind, as stated previously, the JRE contains the JVM. 
+
+The JVM provides a platform-independent runtime environment. The JVM contains an interpreter that interprets bytecode line by line and executes it sequentially. The JVM also contains a Just-In-Time (JIT) compiler that translates bytecode to machine code as part of the optimization process.
+
+The relationship between the various components make it possible for Java to make good on its "write once run anywhere" promise. A developer using Windows can write a Java application's source code and even compile it using the tools included with the Windows platform's version of the JDK. The resulting bytecode can then be distributed to a Linux user that only has the Linux platform's version of the JRE installed. The interpreter included with the JVM will execute the bytecode line by line and execute it sequentially while the JIT will seek optimize where/when possible by translating certain portions to machine code.
+
+
+
 3) With the help of the code for Hello World program in Java (you can copy code with citation), explain when this program needs JDK (and not JRE and JVM), JRE (and not JVM) and JVM.
-	3.1) Hello World example: (Source: https://www.geeksforgeeks.org/beginning-java-programming-with-hello-world-example/)
+
+   	3.1) Hello World example: (Source: https://www.geeksforgeeks.org/beginning-java-programming-with-hello-world-example/)
 		/* This is a simple Java program. 
    		   FileName : "HelloWorld.java". */
 		class HelloWorld 
@@ -21,9 +40,15 @@ Created By: Roderick Chubb, James Woods
 		        System.out.println("Hello, World"); 
 		    } 
 		} 
+
 	3.2)JDK Needed: The JDK would be needed when developing this program. JRE and JVM would not be needed as they focus on the execution, rather than the creation.
+
 	3.3)JRE Needed: The JRE is needed when executing the program.  This contains class libraries and supporting file necessary to execute the program.
+
 	3.4)JVM Needed: The JVM is needed to provide platform independent execution. It includes JIT or Just-in-Time compiler that converts Java into very low level machine languages that allows for different platforms, and also a quicker execution.
+
+
+
 4) Non-trivial question:
-	4.1) If these 3 commonly work together, why are they not integrated into one standalone package?
-	4.2)
+
+   	4.1) If these 3 commonly work together, why are they not integrated into one standalone package?
