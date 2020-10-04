@@ -50,7 +50,7 @@ class Assignment5 {
         } else {
             double real = -coefficientB / (2.0 * coefficientA);
             double imaginary = Math.pow(-discriminant, 0.5) / (2.0 * coefficientA);
-            System.out.println("\n" + "The equation has no REAL roots.");
+            System.out.println("\n" + "The equation has no REAL roots. They are Complex.");
             System.out.format("The roots are Root 1:(" + real + " - j" + imaginary + ") and Root 2:(" + real + " + j" + imaginary + ")" + "\n");
         } // Closes if-else block
 
